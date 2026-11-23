@@ -1,18 +1,75 @@
+/* Aturan Global & Reset Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menggunakan Palet Warna Ramah Mata (Warm/Sepia Tone) */
 body {
-  background-color: #FFFFE0; 
-  font-family: Arial, sans-serif;
-  color: #191970;
+  /* Latar belakang krem lembut / putih gading, tidak memantulkan cahaya berlebih */
+  background-color: #f7f4ed; 
+  
+  /* Warna teks abu-abu gelap kehitaman (bukan hitam pekat #000000) agar kontrasnya pas */
+  color: #2c3238; 
+  
+  /* Tipografi modern sans-serif yang bersih */
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Ukuran font dasar yang lebih besar (18px) untuk mencegah mata menyipit */
+  font-size: 18px; 
+  
+  /* Jarak antar baris (line-height) dibuat longgar agar teks mudah dipindai */
+  line-height: 1.6; 
+  
+  /* Jarak antar huruf (letter-spacing) sedikit dilebarkan */
+  letter-spacing: 0.3px;
+  
+  /* Padding halaman agar konten tidak terlalu menepi */
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.kartu-profil {
-  width: 300px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: violet;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(5,5,5,0.1);
-  text-align: center;
+
+/* Contoh Kontainer Card / Kotak Konten */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border: 1px solid #eae5dc;
 }
-.kartu-profil img{
-  width: 150px;
-  border-radius: 25%;
+
+/* Heading dengan Hierarki yang Jelas */
+h1, h2, h3 {
+  color: #1a1e22;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Tombol dengan Interaksi Lembut */
+.btn-primary {
+  background-color: #4a7c59; /* Warna hijau lumut yang menenangkan */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3b6347;
+  transform: translateY(-1px);
 }
